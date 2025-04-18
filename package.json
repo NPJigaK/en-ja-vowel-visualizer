@@ -1,0 +1,15 @@
+{
+    "name": "vowel-visualizer",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build:wasm": "cd rust-core && wasm-pack build --target web --out-dir ../src/wasm",
+        "dev": "npm run build:wasm && vite",
+        "build": "npm run build:wasm && vite build"
+    },
+    "devDependencies": {
+        "typescript": "^5.4.4",
+        "vite": "^5.2.0",
+        "wasm-pack": "^0.13.1"
+    }
+}
